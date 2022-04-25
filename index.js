@@ -31,7 +31,7 @@ let procesosPendientesDeLlegar;
 let cuenta = 0;
 let hashProcesos = new Map();
 
-// Obtiene el proceso con el cual se debe comenzae
+// Obtiene el proceso con el cual se debe comenzar
 const obtenerProcesoInicial = () => {
     let primerProceso = procesos[0];
     procesos.forEach(proceso => {
