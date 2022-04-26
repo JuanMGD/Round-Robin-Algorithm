@@ -29,7 +29,7 @@ let procesosPendientes = [];
 let procesosTerminados = [];
 let procesosPendientesDeLlegar;
 let cuenta = 0;
-let hashProcesos = new Map();
+let ejecucionesProcesos = new Map();
 
 // Obtiene el proceso con el cual se debe comenzar
 const obtenerProcesoInicial = () => {
@@ -48,7 +48,7 @@ const obtenerProcesoInicial = () => {
 }
 
 const agregarProcesoDiagrama = proceso => {
-    hashProcesos.set(proceso.nombre, 0);
+    ejecucionesProcesos.set(proceso.nombre, 0);
     let tr = document.createElement('tr');
     tr.setAttribute('id', `gantt${proceso.nombre}`);
     diagrama.appendChild(tr);
@@ -56,7 +56,7 @@ const agregarProcesoDiagrama = proceso => {
 
 const agregarBloqueProcesoDiagrama = nombre => {
     const filaProceso = document.getElementById(`gantt${nombre}`);
-    const cuentaProceso = hashProcesos.get(nombre);
+    const cuentaProceso = ejecucionesProcesos.get(nombre);
     const nuevaCuentaProceso = cuenta;
     const longitudCeldaRelleno = cuenta - 1 - cuentaProceso;
     
@@ -70,7 +70,7 @@ const agregarBloqueProcesoDiagrama = nombre => {
     const celdaLetra = document.createElement('td');
     celdaLetra.textContent = nombre;
     filaProceso.appendChild(celdaLetra);
-    hashProcesos.set(nombre, nuevaCuentaProceso);
+    ejecucionesProcesos.set(nombre, nuevaCuentaProceso);
 }
 
 
