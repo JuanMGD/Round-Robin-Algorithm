@@ -259,7 +259,7 @@ datosQuantum.addEventListener('submit', e => {
     operaciones.classList.remove('d-none');
     contenedorGantt.classList.remove('d-none');
 
-    // Ejecuta el proceso
+    // Ejecuta el algoritmo Round Robin
     roundRobin();
 });
 
