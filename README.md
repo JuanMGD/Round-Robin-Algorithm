@@ -1,9 +1,14 @@
-# Algoritmo Round Robin
+# Round Robin Algorithm
 
-Interfaz web para simular la ejecución de procesos con el algoritmo Round Robin
+Web app to simulate the execution of processes using the Round Robin algorithm
 
-## Instrucciones
-1. Abre el archivo index.html en el navegador.
-2. Introduce la información de cada proceso y da clic en "agregar".
-3. Introduce el valor del quantum.
-4. Presiona ejecutar.
+## Instrucctions
+1. Open the index.html file in the browser.
+2. Enter the información of each process and click "agregar".
+3. Enter the quantum value.
+4. Press "ejecutar".
+
+![Project screenshot](https://res.cloudinary.com/dm6hgoyvh/image/upload/v1674329931/github/rrconfig_tp0ryj.png)
+
+## OutPut
+![Result screenshot](https://res.cloudinary.com/dm6hgoyvh/image/upload/v1674329931/github/rrresult_i6r9mx.png)
